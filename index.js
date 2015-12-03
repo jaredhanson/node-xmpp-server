@@ -6,6 +6,7 @@ var C2SServer = require('./lib/C2S/Server')
 var C2SSession = require('./lib/C2S/Session')
 var WebSocketServer = require('./lib/C2S/WebSocket/Server')
 var ComponentServer = require('./lib/component/Server')
+var S2XServer = require('./lib/component/S2XServer')
 var ComponentSession = require('./lib/component/Session')
 var core = require('node-xmpp-core')
 
@@ -40,6 +41,7 @@ module.exports = {
   // Component
   component: {
     Server: ComponentServer,
+    S2XServer: S2XServer,
     Session: ComponentSession
   },
   ComponentServer: ComponentServer,
